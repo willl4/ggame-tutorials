@@ -9,3 +9,4 @@
 * grass_texture239.jpg: http://picsfair.com/green-grass-background.html
 * starfield.jpg: https://www.flickr.com/photos/filterforge/14174682786
 * sun.png: NASA
+* beach-ball-575425_640.png: https://pixabay.com/static/uploads/photo/2014/12/21/23/28/beach-ball-575425_640.png
