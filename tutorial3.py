@@ -38,9 +38,14 @@ def reverseKey(event):
 def mouseClick(event):
     ball.x = event.x
     ball.y = event.y
+pew1_asset = SoundAsset("sounds/pew1.mp3")
+pew1 = Sound(pew1_asset)
+pop_asset = SoundAsset("sounds/reappear.mp3")
+pop = Sound(pop_asset)
+
+
+myapp = App(SCREEN_WIDTH, SCREEN_HEIGHT)
 myapp.listenKeyEvent('keydown', 'space', spaceKey)
 myapp.listenKeyEvent('keydown', 'r', reverseKey)
 myapp.listenMouseEvent('click', mouseClick)
-
-myapp = App(SCREEN_WIDTH, SCREEN_HEIGHT)
 myapp.run(step)
