@@ -29,19 +29,21 @@ def step():
 # Handle the space key
 def spaceKey(event):
     ball.go = not ball.go
-
+pew1_asset = SoundAsset("sounds/pew1.mp3")
+pew1 = Sound(pew1_asset)
+pop_asset = SoundAsset("sounds/reappear.mp3")
+pop = Sound(pop_asset)
 # Handle the "reverse" key
 def reverseKey(event):
     reverse(ball)
+    pop.play()
 
 # Handle the mouse click
 def mouseClick(event):
     ball.x = event.x
     ball.y = event.y
-pew1_asset = SoundAsset("sounds/pew1.mp3")
-pew1 = Sound(pew1_asset)
-pop_asset = SoundAsset("sounds/reappear.mp3")
-pop = Sound(pop_asset)
+    pew1.play()
+
 
 
 myapp = App(SCREEN_WIDTH, SCREEN_HEIGHT)
